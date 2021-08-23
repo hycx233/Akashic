@@ -1,6 +1,6 @@
 ---
 name: Bug report
-about: Create a report to help Akashic improve
+about: Create a Bug report to help Akashic improve
 title: "[Bug]"
 labels: bug
 assignees: ''
