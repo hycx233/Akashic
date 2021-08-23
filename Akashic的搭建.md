@@ -72,19 +72,23 @@ Mirai-Api-Http 2.0以上版本与graia-application-mirai和graia-broadcast（安
 
 2. 在源码结尾处找到
 
-   `app = GraiaMiraiApplication(
-       broadcast=bcc,
-       connect_info=Session(
-           host="http://localhost:xxxx",#填入M-A-H服务运行的地址
-           authKey="xxxxxxxxxxxxxxx",#填入M-A-H中的authKey
-           account=114514,#填入机器人的 qq 号
-           websocket=True #您的M-A-H中是否开启了websocket,如未开启请改为False
-       )
-   )`
+   `app = GraiaMiraiApplication(`
+       `broadcast=bcc,`
+       `connect_info=Session(`
+           `host="http://localhost:xxxx",  #填入M-A-H服务运行的地址`
+           `authKey="xxxxxxxxxxxxxxx",  #填入M-A-H中的authKey`
+           `account=114514,  #填入机器人的 qq 号`
+           `websocket=True #您的M-A-H中是否开启了websocket,如未开启请改为False`
+       `)`
+   `)`
 
 3. 保存并退出
 
 #### 如果能够正常运行，那么恭喜您，您已经成功构建了**Akashic Bot** **: D**
 
+***以下内容适用于Linux**
 
+如果您需要让其保持后台运行，您可以使用nohup指令将其挂起
+
+在终端中输入：`nohup python <Akashic路径> &` 注意该路径结尾包含Akashic.py
 
