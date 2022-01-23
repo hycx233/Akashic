@@ -1,27 +1,93 @@
 # Akashic
 
-Akashic是一个基于Python的Minecraft玩家数据查询机器人（后端）。通过[Mirai](https://github.com/mamoe/mirai)和[Graia](https://github.com/GraiaProject/Application)它可以运行在qq群中，为群员提供hypixel，syuu等数据查询功能
+Akashic是一个由Python编写的数据查询机器人（后端）。基于[Mirai](https://github.com/mamoe/mirai)它可以运行在QQ中，为用户提供Minecraft服务器数据查询服务
 
-Akashic，音译为阿卡夏（或阿卡什），意译为以太
-
-
-
-*目前，该项目处于早期雏形状态，很多功能有待完善，甚至连文档都不够完善。*
+Akashic，音译为阿卡什（或阿卡夏），意译为以太
 
 
 
-### Akashic的构建
+### 开发进度
 
-想要构建它，可以参考该文档：[Akashic的搭建（v0.8.4更新）](https://github.com/hycx233/Akashic/blob/main/Akashic的搭建（v0.8.4更新）.md)
+- Akashic Bot平台 —— 多平台适配
+  - Tencent QQ
+    - [x] ~~mirai-api-http & Graia Application~~
+    - [x] mirai-api-http & Ariadne
+      - [x] 群聊查询
+      - [x] 私聊查询
+    - [ ] ???(未定) —— 频道查询
+  - Discord
+    - [ ] discord.py
+      - [ ] ...
+  - Telegram
+    - [ ] AIOGram
+      - [ ] ...
+- Akashic Bot功能
+  - Minecraft
+    - Hypixel
+      - [x] 基本信息,Bedwars,Skywars,公会...查询
+      - [ ] 游戏不同模式数据查询
+      - [ ] Skyblock信息查询
+      - [ ] 更多游戏查询服务...
+    - Syuu
+      - [x] Rank数据查询
+    - Other
+      - [x] 服务器查询 
+        - [ ] Todo: Bug fixing
+      - [x] 玩家资料查询
+      - [ ] 更多服务...
+  - Arcaea
+      - Arcaea Limited Api
+          - [x] B30查询
+          - [ ] Recent查询
+          - [ ] 指定歌曲查询
+          - [ ] 玩家信息查询
+      - BotArcApi
+          - [ ] B30查询
+              - [ ] Overflow查询
+          - [ ] Recent查询
+          - [ ] 指定歌曲查询
+      - Other
+          - [ ] 单曲信息查询
+              - [ ] 预览音频
+          - [ ] 单曲ptt计算
+          - [ ] 指定定数/等级查询
+          - [ ] ...
+  - Phigros
+      - [ ] 单曲信息查询
+      - [ ] 单曲rks计算
+      - [ ] 指定定数/等级查询
+      - [ ] ...
+  - Other
+      - [ ] 数据存储迁移至MongoDB
+      - [x] 随机数生成等小工具
+      - [ ] 签到系统
+      - [ ] Bilibili监听推送功能
+      - [ ] 更多小功能
 
 
 
-### 开源协议说明
+### ~~Akashic的构建~~
 
-- 本项目主要依赖于[Mirai](https://github.com/mamoe/mirai)和[Graia](https://github.com/GraiaProject/Application)等开源项目，感谢开发者们的无私奉献。
-- 本项目部分内容（中文翻译，排版等）使用/参考了同类开源项目——[Spelako Project](https://github.com/Spelako)，感谢[Peaksol](https://space.bilibili.com/6933622)的开源。
+鉴于项目的不稳定性与合法性，本项目将不再提供搭建方法，仅在此开源源代码供大家参考学习，或为本项目提出好的点子和建议。
 
-鉴于以上两点，本项目Akashic使用**AGPLv3**协议开源
+注：从v11.0开始，本项目使用的Python - MAH中间件由[GraiaProject/Application](https://github.com/GraiaProject/Application) (V4)全面迁移至[Ariadne](https://github.com/GraiaProject/Ariadne) (V4+)，未来会进一步迁移至[Avilla](https://github.com/GraiaProject/Avilla) (V5)
+
+
+
+### 开源协议与使用项目说明
+
+本项目使用**AGPLv3**协议开源，建议使用/间接使用到本项目源码的项目使用AGPLv3开源，同时不支持/鼓励一切商业使用。
+
+#### **本项目使用到的开源项目**
+
+- [mamoe/mirai: 高效率 QQ 机器人支持库](https://github.com/mamoe/mirai) - 底层支持
+- [project-mirai/mirai-api-http: Mirai HTTP API (console) plugin](https://github.com/project-mirai/mirai-api-http) -- 通信 协议支持
+- [GraiaProject/Application: 一个设计精巧, 协议实现完备的, 基于 mirai-api-http 的即时聊天软件自动化框架. ](https://github.com/GraiaProject/Application) -- Python - mirai-api-http通信中间件 框架
+- [GraiaProject/Ariadne: 一个优雅且完备的 Python QQ 自动化框架。基于 Mirai API HTTP v2。 Powered by Graia Project。](https://github.com/GraiaProject/Ariadne) -- Python - mirai-api-http通信中间件 框架
+
+- [Spelako Project](https://github.com/Spelako) -- Hypixel查询部分翻译支持，排版参考
+
+
 
 在GNU Affero通用公共许可证第三版 (GNU Affero General Public License version 3, AGPLv3) 的约束下, 您可以自由地使用和修改该软件, 以及传播该软件或其修改过的版本. 此许可证的约束包括但不限于：
 
@@ -33,7 +99,7 @@ Akashic，音译为阿卡夏（或阿卡什），意译为以太
 #### **许可证**
 
 ```
-Copyright (C) 2021 Akashic Project by hycx233.
+Copyright (C) 2021-2022 Akashic Project by hycx233.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as
@@ -48,8 +114,4 @@ GNU Affero General Public License for more details.
 You should have received a copy of the GNU Affero General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ```
-
-
-
-
 
