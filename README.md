@@ -1,6 +1,6 @@
 # Akashic
 
-Akashic是一个由Python编写的数据查询机器人（后端）。基于[Mirai](https://github.com/mamoe/mirai)它可以运行在QQ中，为用户提供Minecraft服务器数据查询服务
+Akashic是一个由Python编写的数据查询机器人（后端）。基于[Mirai](https://github.com/mamoe/mirai)它可以运行在QQ中，为用户提供游戏数据查询服务
 
 Akashic，音译为阿卡什（或阿卡夏），意译为以太
 
