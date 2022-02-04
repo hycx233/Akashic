@@ -32,7 +32,7 @@ Akashic，音译为阿卡什（或阿卡夏），意译为以太
       - [x] Rank数据查询
     - Other
       - [x] 服务器查询 
-        - [ ] Todo: Bug fixing
+        - [x] Todo: Bug fixing
       - [x] 玩家资料查询
       - [ ] 更多服务...
   - Arcaea
@@ -42,8 +42,8 @@ Akashic，音译为阿卡什（或阿卡夏），意译为以太
           - [ ] 指定歌曲查询
           - [ ] 玩家信息查询
       - BotArcApi
-          - [ ] B30查询
-              - [ ] Overflow查询
+          - [x] B30查询
+              - [x] Overflow查询
           - [ ] Recent查询
           - [ ] 指定歌曲查询
       - Other
@@ -58,7 +58,7 @@ Akashic，音译为阿卡什（或阿卡夏），意译为以太
       - [ ] 指定定数/等级查询
       - [ ] ...
   - Other
-      - [ ] 数据存储迁移至MongoDB
+      - [x] 数据存储迁移至MongoDB
       - [x] 随机数生成等小工具
       - [ ] 签到系统
       - [ ] Bilibili监听推送功能
@@ -115,3 +115,14 @@ You should have received a copy of the GNU Affero General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ```
 
+### 赞助与感谢
+
+项目爱发电地址:https://afdian.net/@Akashic_Project
+
+感谢以下所有好心人的捐赠支持，我会继续努力，绝不会轻易放弃这个项目(ง •̀_•́)ง
+
+sxxx - 15r
+
+感谢那些一直支持我、为我提出建议的朋友以及同领域的大佬，没有你们的支持就不会有这个项目！(｡･ω･｡)ﾉ♡
+
+同样感谢Akashic Bot的每一位用户，是你们让我坚持开发下去这个项目！✧*｡٩(ˊωˋ*)و✧*｡
